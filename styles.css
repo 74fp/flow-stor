@@ -1,0 +1,356 @@
+:root{
+  --bg:#0b0f17;
+  --panel:#0f1623;
+  --card:#121b2a;
+  --text:#e9eef7;
+  --muted:#a9b6cc;
+  --stroke:rgba(255,255,255,.08);
+  --shadow:0 12px 30px rgba(0,0,0,.35);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:
+    radial-gradient(1100px 700px at 20% -10%, rgba(106,169,255,.25), transparent 60%),
+    radial-gradient(900px 600px at 90% 10%, rgba(139,92,246,.22), transparent 55%),
+    var(--bg);
+  color:var(--text);
+}
+a{color:inherit;text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:18px}
+
+/* Topbar */
+.topbar{
+  position:sticky; top:0; z-index:50;
+  display:flex; justify-content:space-between; align-items:center;
+  padding:14px 18px;
+  background: rgba(11,15,23,.72);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--stroke);
+}
+.brand{display:flex;align-items:center;gap:10px}
+.brandText{display:flex;flex-direction:column;line-height:1.1}
+.brandName{
+  font-family: "Poppins","Tajawal",sans-serif;
+  font-size:24px;
+  font-weight:800;
+  letter-spacing:1px;
+  background: linear-gradient(90deg,#5aa9ff,#7b6cff,#b06cff,#ff7ad9);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  color:transparent;
+}
+.actions{display:flex;gap:10px;align-items:center}
+
+/* Buttons */
+.btn{
+  border:1px solid var(--stroke);
+  padding:10px 12px;
+  border-radius:12px;
+  display:inline-flex;gap:8px;align-items:center;justify-content:center;
+  cursor:pointer;
+  transition: transform .08s ease, background .2s ease, border-color .2s ease;
+  user-select:none;
+  background: transparent;
+  color: var(--text);
+}
+.btn:active{transform:scale(.98)}
+.btn.primary{
+  background: linear-gradient(135deg, rgba(106,169,255,.9), rgba(139,92,246,.9));
+  border-color: transparent;
+}
+.btn.ghost{background: rgba(255,255,255,.03)}
+.btn.ghost:hover{background: rgba(255,255,255,.06)}
+.btn.disabled,
+.btn[aria-disabled="true"]{
+  opacity:.55;
+  cursor:not-allowed;
+  pointer-events:none;
+}
+
+/* Hero */
+.hero{padding:18px 0 10px}
+.hero h1{margin:0 0 6px;font-size:28px}
+.hero p{margin:0;color:var(--muted)}
+
+/* Filters */
+.filters{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px}
+.subFilters{margin-top:10px}
+.hidden{display:none !important;}
+
+.chip{
+  padding:9px 12px;
+  border-radius:999px;
+  border:1px solid var(--stroke);
+  background: rgba(255,255,255,.03);
+  color:var(--text);
+  cursor:pointer;
+}
+.chip.active{
+  background: rgba(106,169,255,.16);
+  border-color: rgba(106,169,255,.35);
+}
+
+/* Grid */
+.grid{
+  margin-top:16px;
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  gap:18px;
+  align-items:start;
+}
+
+/* Card */
+.card{
+  background: rgba(18,27,42,.82);
+  border:1px solid var(--stroke);
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow: var(--shadow);
+  display:flex;
+  flex-direction:column;
+
+  /* يخلي كل الكروت نفس الطول */
+  height:330px;
+}
+
+.thumb{
+  height:160px;
+  background: #111827;
+  border-bottom:1px solid var(--stroke);
+  position:relative;
+  overflow:hidden;
+}
+.thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+
+.cardBody{
+  padding:14px;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+
+.titleRow{
+  display:flex;justify-content:space-between;align-items:flex-start;gap:10px;
+}
+.cardTitle{font-weight:900;margin:0;font-size:16px}
+.badge{
+  font-size:11px;color:var(--muted);
+  border:1px solid var(--stroke);
+  padding:4px 8px;border-radius:999px;
+  background: rgba(255,255,255,.03);
+  white-space:nowrap;
+}
+
+/* Red warning bar */
+.alertBar{
+  margin:10px 0 8px;
+  background: rgba(239,68,68,.96);
+  color:#fff;
+  font-weight:1000;
+  text-align:center;
+  padding:9px 10px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.22);
+  box-shadow: 0 12px 26px rgba(239,68,68,.22);
+  letter-spacing:.2px;
+}
+
+/* Sold out bar (optional if you ever show it) */
+.soldOut{
+  margin:8px 0 10px;
+  background: rgba(245,158,11,.20);
+  border:1px solid rgba(245,158,11,.35);
+  color: rgba(255,255,255,.95);
+  font-weight:900;
+  text-align:center;
+  padding:9px 10px;
+  border-radius:12px;
+}
+
+/* Price row */
+.priceRow{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:10px;
+  margin:8px 0 10px;
+}
+.price{font-size:20px;font-weight:900}
+.priceSmall{font-size:13px;color:rgba(255,255,255,.70)}
+
+.cardActions{
+  display:flex;
+  gap:10px;
+  margin-top:auto;
+}
+.cardActions .btn{flex:1}
+
+/* Footer */
+.footer{margin:22px 0 40px}
+.footerBox{
+  border:1px solid var(--stroke);
+  background: rgba(255,255,255,.03);
+  border-radius:18px;
+  padding:16px;
+}
+.footerTitle{font-weight:900;margin-bottom:6px}
+.footerText{color:var(--muted);font-size:13px;margin-bottom:12px}
+.footerRow{display:flex;gap:10px;flex-wrap:wrap}
+.fineprint{
+  margin-top:10px;
+  color: rgba(255,255,255,.55);
+  font-size:12px;
+  line-height:1.5;
+}
+
+/* ===== Modal ===== */
+.modal{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+}
+.modalBackdrop{
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,.55);
+  backdrop-filter: blur(4px);
+}
+.modalCard{
+  position:relative;
+  width:min(760px, 96vw);
+  max-height: 88vh;
+  overflow:auto;
+  background: rgba(18,27,42,.95);
+  border:1px solid var(--stroke);
+  border-radius:18px;
+  box-shadow: var(--shadow);
+}
+.modalX{
+  position:absolute;
+  top:10px;
+  left:10px;
+  border:1px solid var(--stroke);
+  background: rgba(255,255,255,.06);
+  color: var(--text);
+  width:36px;height:36px;
+  border-radius:12px;
+  cursor:pointer;
+}
+.modalImgWrap{
+  width:100%;
+  height:240px;
+  border-bottom:1px solid var(--stroke);
+  background: linear-gradient(135deg, rgba(106,169,255,.22), rgba(139,92,246,.18));
+}
+.modalImgWrap img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+.modalBody{padding:16px}
+.modalTitleRow{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:12px;
+}
+.modalTitle{
+  margin:0;
+  font-size:20px;
+  font-weight:900;
+}
+.modalPrice{
+  font-size:20px;
+  font-weight:900;
+  white-space:nowrap;
+}
+
+/* Options block */
+.modalOptions,
+.modalFields{
+  margin-top:12px;
+  border:1px solid var(--stroke);
+  border-radius:16px;
+  padding:12px;
+  background: rgba(255,255,255,.03);
+}
+.optTitle{
+  font-weight:900;
+  margin-bottom:10px;
+  color: rgba(233,238,247,.95);
+}
+.optList{display:flex;flex-direction:column;gap:10px}
+.optItem{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  border:1px solid var(--stroke);
+  background: rgba(255,255,255,.03);
+  border-radius:14px;
+  padding:10px 12px;
+  cursor:pointer;
+}
+.optLabel{display:flex;align-items:center;gap:10px}
+.optLabel input{transform: scale(1.1);}
+.optPrice{font-weight:900;white-space:nowrap}
+
+.fieldGrid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:10px;
+}
+.fieldItem{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+.fieldItem label{
+  font-size:12px;
+  color: rgba(255,255,255,.75);
+}
+.fieldItem input{
+  border:1px solid var(--stroke);
+  background: rgba(255,255,255,.04);
+  color: var(--text);
+  padding:10px 12px;
+  border-radius:12px;
+  outline:none;
+}
+
+.modalDesc{
+  margin-top:12px;
+  color: rgba(233,238,247,.95);
+  font-size:14px;
+  line-height:1.85;
+}
+.modalDesc .divider{
+  height:1px;
+  background: rgba(255,255,255,.10);
+  margin:12px 0;
+}
+.modalDesc .bullet{margin:4px 0}
+.modalDesc .num{margin:6px 0}
+
+.modalActions{
+  display:flex;
+  gap:10px;
+  margin-top:14px;
+}
+.modalActions .btn{flex:1}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flow</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brandText">
+        <div class="brandName">Flow</div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <a class="btn ghost" id="waTop" href="#" target="_blank" rel="noopener">واتساب</a>
+      <button class="btn ghost" id="copyLink" type="button">نسخ رابط الموقع</button>
+      <button class="btn ghost" id="langBtn" type="button">English</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1 id="heroTitle">خدمات Flow</h1>
+      <p id="heroDesc">اختر القسم، ثم اختر الخدمة واطلب مباشرة من واتساب.</p>
+
+      <!-- Main Filters -->
+      <div class="filters" id="mainFilters">
+        <button class="chip active" data-filter="all" id="filterAll" type="button">الكل</button>
+        <button class="chip" data-filter="subs" id="filterSubs" type="button">اشتراكات</button>
+        <button class="chip" data-filter="net" id="filterNet" type="button">شرائح نت</button>
+        <button class="chip" data-filter="plus" id="filterPlus" type="button">تطبيقات بلس</button>
+        <button class="chip" data-filter="discord" id="filterDiscord" type="button">ديسكورد</button>
+        <button class="chip" data-filter="games" id="filterGames" type="button">الألعاب</button>
+      </div>
+
+      <!-- Sub Filters (dynamic) -->
+      <div class="filters subFilters hidden" id="subFilters"></div>
+    </section>
+
+    <section class="grid" id="grid"></section>
+
+    <footer class="footer">
+      <div class="footerBox">
+        <div class="footerTitle" id="footerTitle">التواصل</div>
+        <div class="footerText" id="footerText">اضغط “اطلب الآن” داخل أي خدمة — أو تواصل مباشرة.</div>
+        <div class="footerRow">
+          <a class="btn primary" id="waBottom" href="#" target="_blank" rel="noopener">فتح واتساب</a>
+        </div>
+        <div class="fineprint" id="fineprint"></div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal hidden" id="detailsModal" aria-hidden="true">
+    <div class="modalBackdrop"></div>
+
+    <div class="modalCard" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modalX" id="modalClose" type="button" aria-label="Close">✕</button>
+
+      <div class="modalImgWrap">
+        <img id="modalImg" alt="" />
+      </div>
+
+      <div class="modalBody">
+        <div class="modalTitleRow">
+          <h2 class="modalTitle" id="modalTitle"></h2>
+          <div class="modalPrice" id="modalPrice"></div>
+        </div>
+
+        <div class="alertBar" id="modalAlert"></div>
+
+        <div class="modalOptions hidden" id="modalOptions">
+          <div class="optTitle" id="optTitle"></div>
+          <div class="optList" id="optList"></div>
+        </div>
+
+        <!-- ✅ نخليه موجود بالـ HTML بس الجافا رح يخفيه دائماً -->
+        <div class="modalFields hidden" id="modalFields">
+          <div class="optTitle" id="fieldsTitle"></div>
+          <div class="fieldGrid" id="fieldGrid"></div>
+        </div>
+
+        <div class="modalDesc" id="modalDesc"></div>
+
+        <div class="modalActions">
+          <a class="btn primary" id="modalBuy" href="#" target="_blank" rel="noopener">الشراء الآن ⚡</a>
+          <button class="btn ghost" id="modalCopy" type="button">نسخ رابط المنتج</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ مهم: defer عشان ما يصير Null -->
+  <script defer src="app.js"></script>
+</body>
+</html>

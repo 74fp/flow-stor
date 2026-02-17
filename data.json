@@ -1,0 +1,414 @@
+{
+  "brand": {
+    "whatsappNumber": "966501988685",
+    "defaultMessageAr": "السلام عليكم، أبغى أطلب من Flow:",
+    "defaultMessageEn": "Hi, I want to order from Flow:",
+    "fineprintAr": "بعد تنفيذ الطلب لا يوجد استرجاع للمبلغ. إذا حصلت مشكلة من قبل المتجر يتم التعويض.",
+    "fineprintEn": "No refunds after processing. Replacement if the issue is store-side."
+  },
+  "sheetApi": "https://script.google.com/macros/s/AKfycbxIX5wGrV-JK0NnwCcKNwrpOsH70_IUCzli5uHaeaBNliFO9Vd_VsmQDlA2IXztFGJO/exec",
+  "services": [
+    {
+      "id": "subs-netflix",
+      "category": "subs",
+      "subcategory": "streaming",
+      "titleAr": "اشتراك شهري — Netflix",
+      "titleEn": "Monthly Subscription — Netflix",
+      "descAr": "⚠️ مهم جداً قراءة التفاصيل قبل الشراء\n—\n⚠️ ملاحظات مهمة:\n1) بعد التنفيذ لا يوجد استرجاع للمبلغ.\n2) في حال وجود مشكلة يتم التعويض بحساب آخر خلال 12 ساعة من وقت التسليم فقط.\n—\n3) مزايا المنتج:\n• مكتبة ضخمة تضم آلاف الأفلام والمسلسلات.\n• ترجمة عربية لجميع المحتويات.\n• مشاهدة بدون إعلانات أو انقطاعات.\n• تحديثات مستمرة لأحدث الأعمال.\n—\n4) شروط الاستخدام:\n• يمنع تعديل البريد الإلكتروني أو كلمة المرور أو إعدادات الدفع.\n• الحساب مخصص لشاشة واحدة فقط.\n• يمنع مشاركة الحساب أو استخدامه على أكثر من جهاز.\n• الالتزام بالبروفايل المحدد.\n• عدم فتح عدة صفحات والتنقل بينها.\n• هذا الاشتراك مشترك وليس خاص.\n—\n⚠️ تنبيه مهم:\n• في حال مخالفة الشروط يتم إلغاء الحساب دون استرجاع.\n• يرجى قراءة الشروط الكاملة المرفقة مع الاشتراك.",
+      "descEn": "Please read details before purchase.\nNo refunds after processing.\nReplacement if store-side issue.",
+      "price": 25,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "منصات المشاهدة",
+      "tagEn": "Streaming",
+      "image": "images/netflix.png"
+    },
+    {
+      "id": "subs-disney",
+      "category": "subs",
+      "subcategory": "streaming",
+      "titleAr": "اشتراك شهري — Disney+",
+      "titleEn": "Monthly Subscription — Disney+",
+      "descAr": "⚠️ مهم جداً قراءة التفاصيل قبل الشراء\n—\n🎬 اشتراك Disney+ الغني عن التعريف\nيدعم جميع الأجهزة والشاشات.\n—\n✅ طريقة التفعيل:\n• بعد إتمام الطلب سيتم إرسال الرقم الخاص لتسجيل الدخول.\n• أدخل الرقم في تطبيق Disney+ واستمتع بالخدمة فورًا.\n• التفعيل فوري أو من ساعة إلى 24 ساعة عند ضغط الطلبات.\n—\n🌟 مميزات الاشتراك:\n• مشاهدة أعمال Disney الحصرية.\n• بدون إعلانات أو تقطيع.\n• جودة عالية.\n• مكتبة متنوعة للأطفال والكبار.\n• جميع مميزات Disney+ الكاملة.\n—\n📱 تفاصيل الاستخدام:\n• جهاز واحد فقط.\n• أعلى باقة متوفرة.\n—\n⚠️ ملاحظات مهمة:\n• بعد التنفيذ لا يوجد استرجاع.\n• في حال وجود مشكلة من قبل المتجر يتم التعويض في نفس اللحظة.\n—\n🕌 تنبيه:\nلا تجعل الأفلام والمسلسلات تُلهيك عن واجباتك الدينية والدنيوية، ونحن غير مسؤولين عن أي مشاهدة غير أخلاقية أمام الله.",
+      "descEn": "Please read details before purchase.\nNo refunds after processing.\nReplacement if store-side issue.",
+      "price": 25,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "منصات المشاهدة",
+      "tagEn": "Streaming",
+      "image": "images/disney.png"
+    },
+    {
+      "id": "subs-osn",
+      "category": "subs",
+      "subcategory": "streaming",
+      "titleAr": "OSN+ — ملفات",
+      "titleEn": "OSN+ — Profiles",
+      "optionsTitleAr": "اختر نوع الملف:",
+      "optionsTitleEn": "Choose profile:",
+      "options": [
+        { "key": "private", "labelAr": "ملف خاص (شهر كامل)", "labelEn": "Private Profile (1 Month)", "price": 10 },
+        { "key": "shared", "labelAr": "ملف مشترك (شهر كامل) — نفذت", "labelEn": "Shared Profile (1 Month) — Sold out", "price": 7, "soldOut": true }
+      ],
+      "descAr": "⚠️ مهم جداً قراءة التفاصيل قبل الشراء\n—\n🎬 استمتع بتجربة OSN+\nبدون إعلانات وبجودة عالية.\n—\n⚠️ ملاحظات:\n• بعد التنفيذ لا يوجد استرجاع.\n• في حال حدوث مشكلة من قبل المتجر يتم التعويض مباشرة.\n• يمنع مشاركة الحساب أو تغيير بياناته.",
+      "descEn": "Please read details before purchase.\nNo refunds after processing.",
+      "price": 0,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "منصات المشاهدة",
+      "tagEn": "Streaming",
+      "image": "images/osn.png"
+    },
+    {
+      "id": "subs-fasel",
+      "category": "subs",
+      "subcategory": "streaming",
+      "titleAr": "اشتراك شهري — فاصل بلس",
+      "titleEn": "Monthly Subscription — Fasel Plus",
+      "descAr": "⚠️ مهم جداً قراءة التفاصيل قبل الشراء\n—\n⚠️ ملاحظات مهمة:\n1) بعد التنفيذ لا يوجد استرجاع للمبلغ.\n2) في حال وجود مشكلة يتم التعويض بحساب آخر في نفس اللحظة.\n—\n3) مزايا المنتج:\n• مكتبة ضخمة تضم آلاف الأفلام والمسلسلات.\n• ترجمة عربية لجميع المحتويات.\n• مشاهدة بدون إعلانات أو انقطاعات.\n• تحديثات مستمرة لأحدث الأعمال.\n—\n4) شروط الاستخدام:\n• يمنع تعديل البريد الإلكتروني أو كلمة المرور أو إعدادات الدفع.\n• الحساب مخصص لشاشة واحدة فقط.\n• يمنع مشاركة الحساب أو استخدامه على أكثر من جهاز.\n• الالتزام بالبروفايل المحدد.\n• عدم فتح عدة صفحات والتنقل بينها.\n• هذا الاشتراك مشترك وليس خاص.\n—\nالتفعيل 📱\n• التفعيل فوري أو من ساعة إلى 24 ساعة عند ضغط الطلبات.\n—\n⚠️ تنبيه مهم:\n• في حال مخالفة الشروط يتم إلغاء الحساب دون استرجاع.\n• يرجى قراءة الشروط الكاملة المرفقة مع الاشتراك.",
+      "descEn": "Please read details before purchase.\nNo refunds after processing.",
+      "price": 25,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "منصات المشاهدة",
+      "tagEn": "Streaming",
+      "image": "images/fasel.png"
+    },
+    {
+      "id": "subs-tiger",
+      "category": "subs",
+      "subcategory": "streaming",
+      "titleAr": "سيرفر تايقر 🐅 IPTV",
+      "titleEn": "Tiger IPTV Server",
+      "optionsTitleAr": "اختر مدة الاشتراك:",
+      "optionsTitleEn": "Choose duration:",
+      "options": [
+        { "key": "m1", "labelAr": "شهر", "labelEn": "1 Month", "price": 35 },
+        { "key": "m3", "labelAr": "3 شهور", "labelEn": "3 Months", "price": 49 },
+        { "key": "m6", "labelAr": "6 شهور", "labelEn": "6 Months", "price": 69 },
+        { "key": "y1", "labelAr": "سنة", "labelEn": "1 Year", "price": 99 }
+      ],
+      "descAr": "⚠️ مهم جداً قراءة التفاصيل قبل الشراء\n—\n⭐️⭐️ أهم مميزات سيرفر تايقر (Tiger TV)\n• قرابة 8000 قناة بث مباشر\n• مكتبة مترجمة ضخمة: حوالي 9000 مسلسل + أكثر من 24000 فيلم\n• مكتبة أطفال كبيرة ومتنوعة\n• المحتوى خالٍ من الإباحية أو +18\n—\n📍 ملاحظة:\n• الكود لجهاز واحد فقط ولا يمكن تسجيل الدخول على أكثر من جهاز في نفس الوقت.",
+      "descEn": "IPTV with huge library. 1 device only.",
+      "price": 0,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "منصات المشاهدة",
+      "tagEn": "Streaming",
+      "image": "images/tiger.png"
+    },
+    {
+      "id": "subs-barq",
+      "category": "subs",
+      "subcategory": "streaming",
+      "titleAr": "اشتراك برق TV 🔥",
+      "titleEn": "Barq TV Subscription",
+      "optionsTitleAr": "اختر مدة الاشتراك:",
+      "optionsTitleEn": "Choose duration:",
+      "options": [
+        { "key": "m1", "labelAr": "شهر", "labelEn": "1 Month", "price": 19 },
+        { "key": "m3", "labelAr": "3 شهور", "labelEn": "3 Months", "price": 35 },
+        { "key": "m6", "labelAr": "6 شهور", "labelEn": "6 Months", "price": 45 },
+        { "key": "y1", "labelAr": "سنة", "labelEn": "1 Year", "price": 80 }
+      ],
+      "descAr": "⚠️ مهم جداً قراءة التفاصيل قبل الشراء\n—\n• سيرفر IPTV ثابت وسريع وقوي\n• يقدم أكبر مكتبة أفلام ومسلسلات\n• بأعلى جودة\n—\n⚠️ ملاحظات:\n• بعد التنفيذ لا يوجد استرجاع.\n• في حال حدوث مشكلة يتم التعويض مباشرة.",
+      "descEn": "Stable IPTV server with a huge library.",
+      "price": 0,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "منصات المشاهدة",
+      "tagEn": "Streaming",
+      "image": "images/barq.png"
+    },
+    {
+      "id": "subs-chatgpt",
+      "category": "subs",
+      "subcategory": "ai",
+      "titleAr": "اشتراك — ChatGPT",
+      "titleEn": "Subscription — ChatGPT",
+      "descAr": "⚠️ مهم جداً قراءة التفاصيل قبل الشراء\n—\n⚠️ ملاحظات:\n• بعد التنفيذ لا يوجد استرجاع.\n• في حال وجود مشكلة يتم التعويض.",
+      "descEn": "Please read details before purchase.",
+      "price": 25,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "اشتراكات AI",
+      "tagEn": "AI Subscriptions",
+      "image": "images/chatgpt.png"
+    },
+
+    {
+      "id": "net-stc",
+      "category": "net",
+      "titleAr": "شريحة نت — STC",
+      "titleEn": "SIM Data — STC",
+      "optionsTitleAr": "اختر الباقة:",
+      "optionsTitleEn": "Choose package:",
+      "options": [
+        { "key": "stc1", "labelAr": "باقة سوا بوست بلس (شهر) — 89", "labelEn": "Sawa Post Plus (1 Month) — 89", "price": 89 },
+        { "key": "stc2", "labelAr": "باقة سوا فليكس 340 — 159", "labelEn": "Sawa Flex 340 — 159", "price": 159 },
+        { "key": "stc3", "labelAr": "باقة سوا فليكس 150 — 89", "labelEn": "Sawa Flex 150 — 89", "price": 89 }
+      ],
+      "descAr": "⚠️ مهم جداً قراءة التفاصيل قبل الشراء\n—\n✅ التفعيل يتم على هوية الزبون عبر نفاذ.\n✅ يتم إضافة/تفعيل الباقة على الرقم.\n—\n⚠️ ملاحظات:\n• بعد التنفيذ لا يوجد استرجاع.",
+      "descEn": "Activation via Nafath. No refunds after processing.",
+      "price": 0,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "شرائح نت",
+      "tagEn": "SIM Data",
+      "image": "images/sts.png"
+    },
+    {
+      "id": "net-zain",
+      "category": "net",
+      "titleAr": "شريحة نت — زين (نفذت)",
+      "titleEn": "SIM Data — Zain (Sold out)",
+      "soldOut": true,
+      "descAr": "نفذت الكمية حالياً.",
+      "descEn": "Sold out currently.",
+      "price": 0,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "شرائح نت",
+      "tagEn": "SIM Data",
+      "image": "images/zain.png"
+    },
+    {
+      "id": "net-mobily",
+      "category": "net",
+      "titleAr": "شريحة نت — موبايلي",
+      "titleEn": "SIM Data — Mobily",
+      "optionsTitleAr": "اختر الباقة:",
+      "optionsTitleEn": "Choose package:",
+      "options": [
+        { "key": "m1", "labelAr": "موبايلي فلكس 3 شهور — 189", "labelEn": "Mobily Flex 3 Months — 189", "price": 189 },
+        { "key": "m2", "labelAr": "3 شهور لا محدود — 589", "labelEn": "Unlimited 3 Months — 589", "price": 589 },
+        { "key": "m3", "labelAr": "شهر لا محدود — 195", "labelEn": "Unlimited 1 Month — 195", "price": 195 },
+        { "key": "m4", "labelAr": "3 شهور 300GB — 219", "labelEn": "300GB 3 Months — 219", "price": 219 },
+        { "key": "m5", "labelAr": "100GB — 125", "labelEn": "100GB — 125", "price": 125 }
+      ],
+      "descAr": "⚠️ مهم جداً قراءة التفاصيل قبل الشراء\n—\n✅ تتفعل على هوية الزبون بنفاذ.\n✅ يطلع له رقم جديد على رقمه الأساسي.\n—\n⚠️ ملاحظات:\n• بعد التنفيذ لا يوجد استرجاع.\n• في حال وجود مشكلة يتم التعويض.",
+      "descEn": "Activation via Nafath. No refunds after processing.",
+      "price": 0,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "شرائح نت",
+      "tagEn": "SIM Data",
+      "image": "images/mobily.png"
+    },
+
+    {
+      "id": "plus-snap",
+      "category": "plus",
+      "titleAr": "سناب بلس",
+      "titleEn": "Snap Plus",
+      "optionsTitleAr": "اختر المدة:",
+      "optionsTitleEn": "Choose duration:",
+      "options": [
+        { "key": "p3", "labelAr": "3 شهور — 25", "labelEn": "3 Months — 25", "price": 25 },
+        { "key": "p12", "labelAr": "سنة — 90", "labelEn": "1 Year — 90", "price": 90 }
+      ],
+      "descAr": "⚠️ مهم جداً قراءة التفاصيل قبل الشراء\n—\n✅ نعطيها للعميل كهدية.\n✅ ما يحتاج دخول الحساب.\n—\n⚠️ ملاحظات:\n• بعد التنفيذ لا يوجد استرجاع.\n• في حال وجود مشكلة يتم التعويض.",
+      "descEn": "Gift. No account login needed.",
+      "price": 0,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "تطبيقات بلس",
+      "tagEn": "Plus Apps",
+      "image": "images/plus.png"
+    },
+
+    {
+      "id": "discord-nitro",
+      "category": "discord",
+      "titleAr": "Discord Nitro",
+      "titleEn": "Discord Nitro",
+      "contactOnly": true,
+      "descAr": "⚠️ اللسعر والتفاصيل:\n• تواصل معنا عبر واتساب وسيتم خدمتك مباشرة.",
+      "descEn": "Contact us on WhatsApp for pricing/details.",
+      "price": 0,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "ديسكورد",
+      "tagEn": "Discord",
+      "image": "images/nitro.png"
+    },
+    {
+      "id": "discord-effects",
+      "category": "discord",
+      "titleAr": "Discord Effects",
+      "titleEn": "Discord Effects",
+      "optionsTitleAr": "اختر السعر المناسب:",
+      "optionsTitleEn": "Choose price:",
+      "options": [
+        { "key": "e1", "labelAr": "4.99$ = 11 ريال", "labelEn": "$4.99 = 11 SAR", "price": 11 },
+        { "key": "e2", "labelAr": "5.99$ = 15 ريال", "labelEn": "$5.99 = 15 SAR", "price": 15 },
+        { "key": "e3", "labelAr": "6.99$ = 18.5 ريال", "labelEn": "$6.99 = 18.5 SAR", "price": 18.5 },
+        { "key": "e4", "labelAr": "7.99$ = 21.5 ريال", "labelEn": "$7.99 = 21.5 SAR", "price": 21.5 },
+        { "key": "e5", "labelAr": "8.49$ = 24 ريال", "labelEn": "$8.49 = 24 SAR", "price": 24 },
+        { "key": "e6", "labelAr": "9.99$ = 27 ريال", "labelEn": "$9.99 = 27 SAR", "price": 27 },
+        { "key": "e7", "labelAr": "11.99$ = 30 ريال", "labelEn": "$11.99 = 30 SAR", "price": 30 }
+      ],
+      "descAr": "⚠️ مهم جداً قراءة التفاصيل قبل الشراء\n—\n✅ اختر السعر المناسب ثم اطلب.\n—\n⚠️ ملاحظة:\n• بعض الباندلز تُرسل هدية (لا تحتاج اختيارها هنا).",
+      "descEn": "Choose a price option then order.",
+      "price": 0,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "ديسكورد",
+      "tagEn": "Discord",
+      "image": "images/discord.png"
+    },
+    {
+      "id": "discord-boost",
+      "category": "discord",
+      "titleAr": "Server Boost",
+      "titleEn": "Server Boost",
+      "contactOnly": true,
+      "descAr": "⚠️ اللسعر والتفاصيل:\n• تواصل معنا عبر واتساب وسيتم خدمتك مباشرة.",
+      "descEn": "Contact us on WhatsApp for pricing/details.",
+      "price": 0,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "ديسكورد",
+      "tagEn": "Discord",
+      "image": "images/boost.png"
+    },
+
+    {
+      "id": "games-arc",
+      "category": "games",
+      "subcategory": "online",
+      "titleAr": "Arc Raiders ",
+      "titleEn": "Arc Raiders ",
+      "contactOnly": true,
+      "descAr": "⚠️ اطلب اللعبة عبر واتساب وسيتم التنسيق على التفاصيل.\n—\n✅ حساب خاص بالعميل (أونلاين).",
+      "descEn": "Contact us via WhatsApp.",
+      "price": 0,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "ألعاب أونلاين",
+      "tagEn": "Online Games",
+      "image": "images/arc.png"
+    },
+    {
+      "id": "games-outlast",
+      "category": "games",
+      "subcategory": "online",
+      "titleAr": "The Outlast Trials ",
+      "titleEn": "The Outlast Trials ",
+      "contactOnly": true,
+      "descAr": "⚠️ اطلب اللعبة عبر واتساب وسيتم التنسيق على التفاصيل.\n—\n✅ حساب خاص بالعميل (أونلاين).",
+      "descEn": "Contact us via WhatsApp.",
+      "price": 0,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "ألعاب أونلاين",
+      "tagEn": "Online Games",
+      "image": "images/theoutlaat.png"
+    },
+    {
+      "id": "games-minecraft",
+      "category": "games",
+      "subcategory": "online",
+      "titleAr": "Minecraft ",
+      "titleEn": "Minecraft ",
+      "soldOut": true,
+      "descAr": "نفذت الكمية حالياً.",
+      "descEn": "Sold out currently.",
+      "price": 0,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "ألعاب أونلاين",
+      "tagEn": "Online Games",
+      "image": "images/min.png"
+    },
+
+    {
+      "id": "games-re4",
+      "category": "games",
+      "subcategory": "offline",
+      "titleAr": "Resident Evil 4 ",
+      "titleEn": "Resident Evil 4 ",
+      "soldOut": true,
+      "descAr": "نفذت الكمية حالياً.",
+      "descEn": "Sold out currently.",
+      "price": 0,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "ألعاب أوفلاين",
+      "tagEn": "Offline Games",
+      "image": "images/evil4.png"
+    },
+    {
+      "id": "games-re7",
+      "category": "games",
+      "subcategory": "offline",
+      "titleAr": "Resident Evil 7 ",
+      "titleEn": "Resident Evil 7 ",
+      "soldOut": true,
+      "descAr": "نفذت الكمية حالياً.",
+      "descEn": "Sold out currently.",
+      "price": 0,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "ألعاب أوفلاين",
+      "tagEn": "Offline Games",
+      "image": "images/evil7.png"
+    },
+    {
+      "id": "games-re8",
+      "category": "games",
+      "subcategory": "offline",
+      "titleAr": "Resident Evil 8 ",
+      "titleEn": "Resident Evil 8 ",
+      "soldOut": true,
+      "descAr": "نفذت الكمية حالياً.",
+      "descEn": "Sold out currently.",
+      "price": 0,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "ألعاب أوفلاين",
+      "tagEn": "Offline Games",
+      "image": "images/evil8.png"
+    },
+    {
+      "id": "games-re9",
+      "category": "games",
+      "subcategory": "offline",
+      "titleAr": "Resident Evil 9  ",
+      "titleEn": "Resident Evil 9 ",
+      "soldOut": true,
+      "descAr": "نفذت الكمية حالياً.",
+      "descEn": "Sold out currently.",
+      "price": 0,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "ألعاب أوفلاين",
+      "tagEn": "Offline Games",
+      "image": "images/evil9.png"
+    },
+
+    {
+      "id": "games-vbucks",
+      "category": "games",
+      "subcategory": "skins",
+      "titleAr": "فورت نايت ",
+      "titleEn": "Fortnite — Skins & Bundles (V-Bucks)",
+      "optionsTitleAr": "اختر الباقة:",
+      "optionsTitleEn": "Choose pack:",
+      "options": [
+        { "key": "v1", "labelAr": "1000 V-Bucks ", "labelEn": "1000 V-Bucks ", "price": 17 },
+        { "key": "v2", "labelAr": "2800 V-Bucks ", "labelEn": "2800 V-Bucks ", "price": 43 },
+        { "key": "v3", "labelAr": "5000 V-Bucks ", "labelEn": "5000 V-Bucks ", "price": 68 },
+        { "key": "v4", "labelAr": "13500 V-Bucks ", "labelEn": "13500 V-Bucks ", "price": 168 }
+      ],
+      "descAr": "⚠️ مهم جداً قراءة التفاصيل قبل الشراء\n—\n✅ اختر أي حزمة أو سكن، ونهدّيه لك.\n—\n⚠️ ملاحظات:\n• بعد التنفيذ لا يوجد استرجاع.\n• في حال وجود مشكلة يتم التعويض.",
+      "descEn": "Choose any pack/skin and we deliver it.",
+      "price": 0,
+      "currencyAr": "ر.س",
+      "currencyEn": "SAR",
+      "tagAr": "سكنات وحزم",
+      "tagEn": "Skins & Bundles",
+      "image": "images/vbucks.png"
+    }
+  ]
+}
