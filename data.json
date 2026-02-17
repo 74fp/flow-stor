@@ -36,7 +36,7 @@
       "currencyEn": "SAR",
       "tagAr": "منصات المشاهدة",
       "tagEn": "Streaming",
-      "image": "images/disney.png"
+      "image": "disney.png"
     },
     {
       "id": "subs-osn",
@@ -57,7 +57,7 @@
       "currencyEn": "SAR",
       "tagAr": "منصات المشاهدة",
       "tagEn": "Streaming",
-      "image": "images/osn.png"
+      "image": "osn.png"
     },
     {
       "id": "subs-fasel",
@@ -67,12 +67,12 @@
       "titleEn": "Monthly Subscription — Fasel Plus",
       "descAr": "⚠️ مهم جداً قراءة التفاصيل قبل الشراء\n—\n⚠️ ملاحظات مهمة:\n1) بعد التنفيذ لا يوجد استرجاع للمبلغ.\n2) في حال وجود مشكلة يتم التعويض بحساب آخر في نفس اللحظة.\n—\n3) مزايا المنتج:\n• مكتبة ضخمة تضم آلاف الأفلام والمسلسلات.\n• ترجمة عربية لجميع المحتويات.\n• مشاهدة بدون إعلانات أو انقطاعات.\n• تحديثات مستمرة لأحدث الأعمال.\n—\n4) شروط الاستخدام:\n• يمنع تعديل البريد الإلكتروني أو كلمة المرور أو إعدادات الدفع.\n• الحساب مخصص لشاشة واحدة فقط.\n• يمنع مشاركة الحساب أو استخدامه على أكثر من جهاز.\n• الالتزام بالبروفايل المحدد.\n• عدم فتح عدة صفحات والتنقل بينها.\n• هذا الاشتراك مشترك وليس خاص.\n—\nالتفعيل 📱\n• التفعيل فوري أو من ساعة إلى 24 ساعة عند ضغط الطلبات.\n—\n⚠️ تنبيه مهم:\n• في حال مخالفة الشروط يتم إلغاء الحساب دون استرجاع.\n• يرجى قراءة الشروط الكاملة المرفقة مع الاشتراك.",
       "descEn": "Please read details before purchase.\nNo refunds after processing.",
-      "price": 25,
+      "price": 10,
       "currencyAr": "ر.س",
       "currencyEn": "SAR",
       "tagAr": "منصات المشاهدة",
       "tagEn": "Streaming",
-      "image": "images/fasel.png"
+      "image": "fasel.png"
     },
     {
       "id": "subs-tiger",
@@ -95,7 +95,7 @@
       "currencyEn": "SAR",
       "tagAr": "منصات المشاهدة",
       "tagEn": "Streaming",
-      "image": "images/tiger.png"
+      "image": "tiger.png"
     },
     {
       "id": "subs-barq",
@@ -118,7 +118,7 @@
       "currencyEn": "SAR",
       "tagAr": "منصات المشاهدة",
       "tagEn": "Streaming",
-      "image": "images/barq.png"
+      "image": "barq.png"
     },
     {
       "id": "subs-chatgpt",
@@ -133,7 +133,7 @@
       "currencyEn": "SAR",
       "tagAr": "اشتراكات AI",
       "tagEn": "AI Subscriptions",
-      "image": "images/chatgpt.png"
+      "image": "chatgpt.png"
     },
 
     {
@@ -155,7 +155,7 @@
       "currencyEn": "SAR",
       "tagAr": "شرائح نت",
       "tagEn": "SIM Data",
-      "image": "images/sts.png"
+      "image": "sts.png"
     },
     {
       "id": "net-zain",
@@ -170,7 +170,7 @@
       "currencyEn": "SAR",
       "tagAr": "شرائح نت",
       "tagEn": "SIM Data",
-      "image": "images/zain.png"
+      "image": "zain.png"
     },
     {
       "id": "net-mobily",
@@ -193,7 +193,7 @@
       "currencyEn": "SAR",
       "tagAr": "شرائح نت",
       "tagEn": "SIM Data",
-      "image": "images/mobily.png"
+      "image": "mobily.png"
     },
 
     {
@@ -214,7 +214,7 @@
       "currencyEn": "SAR",
       "tagAr": "تطبيقات بلس",
       "tagEn": "Plus Apps",
-      "image": "images/plus.png"
+      "image": "plus.png"
     },
 
     {
@@ -230,7 +230,7 @@
       "currencyEn": "SAR",
       "tagAr": "ديسكورد",
       "tagEn": "Discord",
-      "image": "images/nitro.png"
+      "image": "nitro.png"
     },
     {
       "id": "discord-effects",
@@ -255,7 +255,7 @@
       "currencyEn": "SAR",
       "tagAr": "ديسكورد",
       "tagEn": "Discord",
-      "image": "images/discord.png"
+      "image": "discord.png"
     },
     {
       "id": "discord-boost",
@@ -270,7 +270,7 @@
       "currencyEn": "SAR",
       "tagAr": "ديسكورد",
       "tagEn": "Discord",
-      "image": "images/boost.png"
+      "image": "boost.png"
     },
 
     {
@@ -287,7 +287,7 @@
       "currencyEn": "SAR",
       "tagAr": "ألعاب أونلاين",
       "tagEn": "Online Games",
-      "image": "images/arc.png"
+      "image": "arc.png"
     },
     {
       "id": "games-outlast",
@@ -303,7 +303,7 @@
       "currencyEn": "SAR",
       "tagAr": "ألعاب أونلاين",
       "tagEn": "Online Games",
-      "image": "images/theoutlaat.png"
+      "image": "theoutlaat.png"
     },
     {
       "id": "games-minecraft",
@@ -319,7 +319,7 @@
       "currencyEn": "SAR",
       "tagAr": "ألعاب أونلاين",
       "tagEn": "Online Games",
-      "image": "images/min.png"
+      "image": "min.png"
     },
 
     {
@@ -336,7 +336,7 @@
       "currencyEn": "SAR",
       "tagAr": "ألعاب أوفلاين",
       "tagEn": "Offline Games",
-      "image": "images/evil4.png"
+      "image": "evil4.png"
     },
     {
       "id": "games-re7",
@@ -352,7 +352,7 @@
       "currencyEn": "SAR",
       "tagAr": "ألعاب أوفلاين",
       "tagEn": "Offline Games",
-      "image": "images/evil7.png"
+      "image": "evil7.png"
     },
     {
       "id": "games-re8",
@@ -368,7 +368,7 @@
       "currencyEn": "SAR",
       "tagAr": "ألعاب أوفلاين",
       "tagEn": "Offline Games",
-      "image": "images/evil8.png"
+      "image": "evil8.png"
     },
     {
       "id": "games-re9",
@@ -384,7 +384,7 @@
       "currencyEn": "SAR",
       "tagAr": "ألعاب أوفلاين",
       "tagEn": "Offline Games",
-      "image": "images/evil9.png"
+      "image": "evil9.png"
     },
 
     {
@@ -408,8 +408,9 @@
       "currencyEn": "SAR",
       "tagAr": "سكنات وحزم",
       "tagEn": "Skins & Bundles",
-      "image": "images/vbucks.png"
+      "image": "vbucks.png"
     }
   ]
 }
+
 
