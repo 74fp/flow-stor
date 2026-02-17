@@ -21,7 +21,7 @@
       "currencyEn": "SAR",
       "tagAr": "منصات المشاهدة",
       "tagEn": "Streaming",
-      "image": "images/netflix.png"
+      "image": "netflix.png"
     },
     {
       "id": "subs-disney",
@@ -412,3 +412,4 @@
     }
   ]
 }
+
